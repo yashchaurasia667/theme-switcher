@@ -1,0 +1,6 @@
+module ThemeSwitcher
+typeinfo theme_switcher.qmltypes
+prefer :/qt/qml/ThemeSwitcher/
+Main 1.0 qml/Main.qml
+depends QtQuick
+

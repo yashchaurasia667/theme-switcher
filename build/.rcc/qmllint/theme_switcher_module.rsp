@@ -1,0 +1,16 @@
+-I
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build
+-I
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/ThemeSwitcher
+-I
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build
+-I
+/usr/lib/qt6/qml
+--resource
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/.qt/rcc/qmake_ThemeSwitcher.qrc
+--resource
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/.qt/rcc/theme_switcher_raw_qml_0.qrc
+--resource
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/.qt/rcc/theme_switcher_raw_qml_0_extra_qmldirs.qrc
+--module
+ThemeSwitcher

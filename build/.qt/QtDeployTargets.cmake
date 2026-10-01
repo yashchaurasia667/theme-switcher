@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_theme_switcher_FILE /home/yash/Documents/Stuff/current_projects/theme-switcher/build/theme_switcher)
+set(__QT_DEPLOY_TARGET_theme_switcher_TYPE EXECUTABLE)

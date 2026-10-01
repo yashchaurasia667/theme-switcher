@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/ThemeSwitcher">/home/yash/Documents/Stuff/current_projects/theme-switcher/build/ThemeSwitcher</file>
+
+  </qresource>
+</RCC>

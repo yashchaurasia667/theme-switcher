@@ -1,0 +1,15 @@
+-rootPath
+/home/yash/Documents/Stuff/current_projects/theme-switcher
+-cmake-output
+-output-file
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/.qt/qml_imports/theme_switcher_build.cmake
+-importPath
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build
+-importPath
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/ThemeSwitcher
+-importPath
+/usr/lib/qt6/qml
+-qrcFiles
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/.qt/rcc/qmake_ThemeSwitcher.qrc
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/.qt/rcc/theme_switcher_raw_qml_0.qrc
+/home/yash/Documents/Stuff/current_projects/theme-switcher/build/.qt/rcc/theme_switcher_raw_qml_0_extra_qmldirs.qrc
