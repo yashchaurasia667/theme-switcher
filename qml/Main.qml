@@ -62,9 +62,15 @@ ApplicationWindow {
           Image {
             id: img
             anchors.fill: parent
+            anchors.margins: stagedPath === model.filePath ? parent.border.width : 0
+
             fillMode: Image.PreserveAspectCrop
             source: "file://" + model.filePath
-            anchors.margins: stagedPath === model.filePath ? parent.border.width : 0
+
+            sourceSize.width: 300
+            sourceSize.height: 200
+            asynchronous: true
+
             Behavior on anchors.margins {
               NumberAnimation { duration: 150 }
             }
@@ -81,7 +87,10 @@ ApplicationWindow {
 
           MouseArea {
             anchors.fill: parent
-            onClicked: stagedPath = model.filePath
+            onClicked: {
+              stagedPath = model.filePath
+              backend.generatePalette(model.filePath);
+            }
           }
         }
       }
@@ -94,12 +103,34 @@ ApplicationWindow {
       Layout.leftMargin: 14
       Layout.rightMargin: 14
 
+      Row {
+        anchors.left: parent.left
+        anchors.verticalCenter: parent.verticalCenter
+        spacing: 6
+
+        Repeater {
+          model: backend.palette
+
+          delegate: Rectangle {
+            border.width: 2
+            border.color: "white"
+
+            width: 30
+            height: 30
+            radius: 15
+
+            color: modelData
+          }
+        }
+      }
+
       Button {
         text: backend.busy ? "Applying..." : "Apply"
         enabled: stagedPath !== "" && !backend.busy
 
         anchors.right: parent.right
-        anchors.bottom: parent.bottom
+        anchors.verticalCenter: parent.verticalCenter
+        // anchors.bottom: parent.bottom
 
         implicitWidth: 120
         implicitHeight: 40

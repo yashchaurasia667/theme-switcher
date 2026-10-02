@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/ThemeSwitcher/">
-    <file alias="qml/Main.qml">/home/yash/Documents/Stuff/current_projects/theme-switcher/qml/Main.qml</file>
-  </qresource>
-</RCC>
-
