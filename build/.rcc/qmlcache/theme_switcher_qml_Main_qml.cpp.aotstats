@@ -7,107 +7,211 @@
                     "entries": [
                         {
                             "codegenResult": 0,
-                            "column": 12,
+                            "column": 19,
                             "durationMicroseconds": 0,
-                            "functionName": "model",
+                            "functionName": "fill",
                             "line": 26,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 19,
+                            "column": 16,
                             "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 27,
+                            "functionName": "model",
+                            "line": 40,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 43,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "top",
+                            "line": 36,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 37,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "horizontalCenter",
+                            "line": 38,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 57,
+                            "message": "Cannot access value for name stagedPath"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "fillMode",
+                            "line": 65,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 21,
                             "durationMicroseconds": 0,
-                            "functionName": "color",
-                            "line": 40,
-                            "message": "Cannot access value for name stagedPath"
+                            "functionName": "source",
+                            "line": 66,
+                            "message": "Cannot access value for name model"
                         },
                         {
                             "codegenResult": 0,
-                            "column": 19,
+                            "column": 27,
                             "durationMicroseconds": 0,
-                            "functionName": "fillMode",
-                            "line": 44,
+                            "functionName": "fill",
+                            "line": 64,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 30,
+                            "durationMicroseconds": 0,
+                            "functionName": "margins",
+                            "line": 67,
+                            "message": "Cannot access value for name stagedPath"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 75,
+                            "message": "Cannot access value for name img"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "height",
+                            "line": 76,
+                            "message": "Cannot access value for name img"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 84,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 83,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 15,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 98,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "enabled",
+                            "line": 99,
+                            "message": "Could not find property \"enabled\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 124,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 101,
+                            "message": "Could not find property \"right\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 102,
+                            "message": "Could not find property \"bottom\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "color",
+                            "line": 110,
+                            "message": "Cannot load property hovered from (component in /home/yash/Documents/Stuff/current_projects/theme-switcher/qml/Main.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 109,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 17,
                             "durationMicroseconds": 0,
-                            "functionName": "source",
-                            "line": 45,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 23,
-                            "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 43,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 50,
-                            "message": "Cannot access value for name model"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 23,
-                            "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 49,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 11,
-                            "durationMicroseconds": 0,
                             "functionName": "text",
-                            "line": 58,
-                            "message": "Could not find property \"text\"."
+                            "line": 118,
+                            "message": "Cannot load property text from (component in /home/yash/Documents/Stuff/current_projects/theme-switcher/qml/Main.qml)::parent with type QQuickItem."
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 14,
+                            "codegenResult": 0,
+                            "column": 18,
                             "durationMicroseconds": 0,
-                            "functionName": "enabled",
-                            "line": 59,
-                            "message": "Could not find property \"enabled\"."
+                            "functionName": "color",
+                            "line": 119,
+                            "message": ""
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 16,
+                            "codegenResult": 0,
+                            "column": 32,
                             "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 60,
-                            "message": "Could not find signal \"clicked\"."
+                            "functionName": "horizontalAlignment",
+                            "line": 120,
+                            "message": ""
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 21,
+                            "codegenResult": 0,
+                            "column": 30,
                             "durationMicroseconds": 0,
-                            "functionName": "bottom",
-                            "line": 56,
-                            "message": "Could not find property \"bottom\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "right",
-                            "line": 57,
-                            "message": "Could not find property \"right\"."
+                            "functionName": "verticalAlignment",
+                            "line": 121,
+                            "message": ""
                         }
                     ],
                     "filePath": "/home/yash/Documents/Stuff/current_projects/theme-switcher/qml/Main.qml"

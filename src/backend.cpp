@@ -15,13 +15,15 @@ void Backend::applyWallpaper(const QString &path) {
   m_busy = true;
   emit busyChanged();
 
-  auto *proc = new QProcess(this);
-  proc->start("awww", { "img", path, "--transition-type=random" });
+  runMatugen(path);
 
-  connect(proc, &QProcess::finished, this, [=, this](int exitCode, QProcess::ExitStatus status) {
-    runMatugen(path);
-    proc->deleteLater();
-  });
+  // auto *proc = new QProcess(this);
+  // proc->start("awww", { "img", path, "--transition-type=random" });
+
+  // connect(proc, &QProcess::finished, this, [=, this](int exitCode, QProcess::ExitStatus status) {
+  //   runMatugen(path);
+  //   proc->deleteLater();
+  // });
 }
 
 void Backend::runMatugen(const QString &path) {

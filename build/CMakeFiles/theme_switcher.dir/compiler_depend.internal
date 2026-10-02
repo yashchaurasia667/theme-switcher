@@ -175,6 +175,8 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
  /usr/include/c++/16/bits/postypes.h
  /usr/include/c++/16/bits/predefined_ops.h
  /usr/include/c++/16/bits/ptr_traits.h
+ /usr/include/c++/16/bits/random.h
+ /usr/include/c++/16/bits/random.tcc
  /usr/include/c++/16/bits/range_access.h
  /usr/include/c++/16/bits/ranges_algo.h
  /usr/include/c++/16/bits/ranges_algobase.h
@@ -282,6 +284,7 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
  /usr/include/c++/16/pstl/glue_memory_defs.h
  /usr/include/c++/16/pstl/glue_numeric_defs.h
  /usr/include/c++/16/pstl/pstl_config.h
+ /usr/include/c++/16/random
  /usr/include/c++/16/ranges
  /usr/include/c++/16/ratio
  /usr/include/c++/16/set
@@ -325,6 +328,7 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/messages_members.h
+ /usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h
  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h
  /usr/include/ctype.h
@@ -422,6 +426,7 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
  /usr/include/qt6/QtCore/qpair.h
  /usr/include/qt6/QtCore/qpointer.h
  /usr/include/qt6/QtCore/qprocessordetection.h
+ /usr/include/qt6/QtCore/qrandom.h
  /usr/include/qt6/QtCore/qrefcount.h
  /usr/include/qt6/QtCore/qscopedpointer.h
  /usr/include/qt6/QtCore/qscopeguard.h

@@ -171,6 +171,8 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
   /usr/include/c++/16/bits/postypes.h \
   /usr/include/c++/16/bits/predefined_ops.h \
   /usr/include/c++/16/bits/ptr_traits.h \
+  /usr/include/c++/16/bits/random.h \
+  /usr/include/c++/16/bits/random.tcc \
   /usr/include/c++/16/bits/range_access.h \
   /usr/include/c++/16/bits/ranges_algo.h \
   /usr/include/c++/16/bits/ranges_algobase.h \
@@ -278,6 +280,7 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
   /usr/include/c++/16/pstl/glue_memory_defs.h \
   /usr/include/c++/16/pstl/glue_numeric_defs.h \
   /usr/include/c++/16/pstl/pstl_config.h \
+  /usr/include/c++/16/random \
   /usr/include/c++/16/ranges \
   /usr/include/c++/16/ratio \
   /usr/include/c++/16/set \
@@ -321,6 +324,7 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/messages_members.h \
+  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
@@ -418,6 +422,7 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qml_Main_qml.cp
   /usr/include/qt6/QtCore/qpair.h \
   /usr/include/qt6/QtCore/qpointer.h \
   /usr/include/qt6/QtCore/qprocessordetection.h \
+  /usr/include/qt6/QtCore/qrandom.h \
   /usr/include/qt6/QtCore/qrefcount.h \
   /usr/include/qt6/QtCore/qscopedpointer.h \
   /usr/include/qt6/QtCore/qscopeguard.h \
@@ -3967,9 +3972,9 @@ theme_switcher_autogen/mocs_compilation.cpp:
 
 /usr/include/qt6/QtCore/qpoint.h:
 
-/home/yash/Documents/Stuff/current_projects/theme-switcher/src/wallpapermodel.cpp:
+/usr/include/qt6/QtCore/qmargins.h:
 
-/usr/include/bits/types/struct_tm.h:
+/usr/include/qt6/QtCore/qeventloop.h:
 
 /usr/include/c++/16/format:
 
@@ -4001,8 +4006,6 @@ theme_switcher_autogen/mocs_compilation.cpp:
 
 .rcc/qmlcache/theme_switcher_qml_Main_qml.cpp:
 
-/usr/include/qt6/QtCore/qmargins.h:
-
 /usr/include/linux/sched/types.h:
 
 /usr/include/c++/16/cstdio:
@@ -4012,6 +4015,10 @@ theme_switcher_autogen/mocs_compilation.cpp:
 /usr/include/c++/16/bits/ranges_util.h:
 
 /usr/include/c++/16/bits/locale_classes.h:
+
+/usr/include/qt6/QtCore/qdeadlinetimer.h:
+
+/usr/include/c++/16/utility:
 
 /usr/include/qt6/QtQml/qqmlcomponent.h:
 
@@ -4079,7 +4086,11 @@ theme_switcher_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/16/bits/ranges_algobase.h:
 
+/usr/include/c++/16/bits/random.h:
+
 /usr/include/sys/types.h:
+
+/usr/include/c++/16/bits/random.tcc:
 
 /usr/include/c++/16/bits/postypes.h:
 
@@ -4110,6 +4121,10 @@ theme_switcher_autogen/mocs_compilation.cpp:
 /usr/include/qt6/QtCore/qtmocconstants.h:
 
 /usr/include/c++/16/bits/predefined_ops.h:
+
+/usr/include/qt6/QtCore/qcoreevent.h:
+
+/usr/include/c++/16/bits/locale_facets_nonio.h:
 
 theme_switcher_autogen/UVLADIE3JM/moc_backend.cpp:
 
@@ -4373,8 +4388,6 @@ CMakeFiles/theme_switcher.dir/build/.rcc/qmlcache/theme_switcher_qmlcache_loader
 
 /usr/include/c++/16/bits/requires_hosted.h:
 
-/usr/include/qt6/QtCore/qeventloop.h:
-
 /usr/include/bits/byteswap.h:
 
 /usr/include/c++/16/stdlib.h:
@@ -4513,6 +4526,10 @@ CMakeFiles/theme_switcher.dir/build/.qt/rcc/qrc_theme_switcher_raw_qml_0.cpp.o:
 
 /usr/include/qt6/QtCore/qiterable.h:
 
+/home/yash/Documents/Stuff/current_projects/theme-switcher/src/wallpapermodel.cpp:
+
+/usr/include/bits/types/struct_tm.h:
+
 /usr/lib/libxkbcommon.so.0:
 
 /usr/include/c++/16/codecvt:
@@ -4597,8 +4614,6 @@ CMakeFiles/theme_switcher.dir/src/wallpapermodel.cpp.o:
 
 /usr/include/qt6/QtCore/qcontainertools_impl.h:
 
-/usr/include/qt6/QtQml/qjsprimitivevalue.h:
-
 /usr/include/bits/cpu-set.h:
 
 /usr/include/c++/16/bits/atomic_lockfree_defines.h:
@@ -4632,8 +4647,6 @@ CMakeFiles/theme_switcher.dir/src/wallpapermodel.cpp.o:
 /usr/include/c++/16/bits/basic_string.tcc:
 
 /usr/include/c++/16/bits/chrono.h:
-
-/usr/include/c++/16/istream:
 
 /usr/include/qt6/QtCore/qtclasshelpermacros.h:
 
@@ -4680,6 +4693,8 @@ CMakeFiles/theme_switcher.dir/src/wallpapermodel.cpp.o:
 /usr/include/c++/16/bits/stl_set.h:
 
 /usr/include/asm/posix_types_64.h:
+
+/usr/include/c++/16/istream:
 
 /usr/include/c++/16/limits:
 
@@ -4765,6 +4780,10 @@ CMakeFiles/theme_switcher.dir/build/.qt/rcc/qrc_qmake_ThemeSwitcher.cpp.o:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
+/usr/include/qt6/QtCore/qnativeinterface.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++locale.h:
+
 /usr/include/c++/16/bits/stl_uninitialized.h:
 
 /usr/include/c++/16/cstring:
@@ -4782,6 +4801,10 @@ CMakeFiles/theme_switcher.dir/build/.qt/rcc/qrc_qmake_ThemeSwitcher.cpp.o:
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/gthr.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/messages_members.h:
+
+/usr/include/qt6/QtQml/qjsprimitivevalue.h:
+
+/usr/include/c++/16/x86_64-pc-linux-gnu/bits/opt_random.h:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/time_members.h:
 
@@ -4812,10 +4835,6 @@ CMakeFiles/theme_switcher.dir/build/.qt/rcc/qrc_qmake_ThemeSwitcher.cpp.o:
 /usr/lib/crtn.o:
 
 /usr/include/linux/limits.h:
-
-/usr/include/c++/16/bits/locale_facets_nonio.h:
-
-/usr/include/qt6/QtCore/qcoreevent.h:
 
 /usr/lib/libmvec.so.1:
 
@@ -4891,6 +4910,8 @@ CMakeFiles/theme_switcher.dir/build/.qt/rcc/qrc_qmake_ThemeSwitcher.cpp.o:
 
 /usr/include/qt6/QtCore/qutf8stringview.h:
 
+/usr/include/c++/16/random:
+
 /usr/include/qt6/QtCore/qcontainerfwd.h:
 
 /usr/include/qt6/QtCore/qcontainerinfo.h:
@@ -4948,6 +4969,8 @@ CMakeFiles/theme_switcher.dir/build/.qt/rcc/qrc_qmake_ThemeSwitcher.cpp.o:
 /usr/include/c++/16/compare:
 
 /usr/include/qt6/QtCore/qmetaobject.h:
+
+/usr/include/qt6/QtCore/qrandom.h:
 
 /usr/include/qt6/QtCore/qmetatype.h:
 
@@ -5152,11 +5175,3 @@ CMakeFiles/theme_switcher.dir/build/.qt/rcc/qrc_qmake_ThemeSwitcher.cpp.o:
 /usr/include/qt6/QtCore/qabstracteventdispatcher.h:
 
 /usr/include/qt6/QtCore/qcoreapplication_platform.h:
-
-/usr/include/c++/16/utility:
-
-/usr/include/qt6/QtCore/qdeadlinetimer.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/include/qt6/QtCore/qnativeinterface.h:
