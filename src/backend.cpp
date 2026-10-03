@@ -1,16 +1,14 @@
 #include "backend.h"
+
 #include <qprocess.h>
 
-#include <QProcess>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QProcess>
 #include <iostream>
 
-const QStringList Backend::kRoles = {
-  "primary", "secondary", "tertiary", "error",
-  "background", "surface", "surface_variant",
-  "outline", "inverse_primary", "source_color"
-};
+const QStringList Backend::kRoles = { "primary", "secondary", "tertiary", "error", "background", "surface",
+  "surface_variant", "outline", "inverse_primary", "source_color" };
 
 Backend::Backend(QObject *parent)
     : QObject(parent) {
@@ -36,6 +34,13 @@ void Backend::applyWallpaper(const QString &path) {
     runMatugen(path);
     proc->deleteLater();
   });
+
+  auto *copyProc = new QProcess(this);
+  copyProc->start("cp", { path, "/opt/wal.png" });
+
+  connect(copyProc, &QProcess::finished, this, [=, this](int, QProcess::ExitStatus) {
+    copyProc->deleteLater();
+  });
 }
 
 void Backend::generatePalette(const QString &path) {
@@ -43,27 +48,25 @@ void Backend::generatePalette(const QString &path) {
   proc->start("matugen", { "image", path, "--dry-run", "--source-color-index", "0", "--json", "hex" });
 
   connect(proc, &QProcess::finished, this, [=, this](int, QProcess::ExitStatus) {
-      QByteArray output = proc->readAllStandardOutput();
-      QJsonDocument doc = QJsonDocument::fromJson(output);
-      if(!doc.isObject()) {
+    QByteArray output = proc->readAllStandardOutput();
+    QJsonDocument doc = QJsonDocument::fromJson(output);
+    if (!doc.isObject()) {
       std::cout << "output is not a json object" << std::endl;
       return;
-      }
+    }
 
-      QJsonObject colors = doc.object().value("colors").toObject();
-      m_palette.clear();
+    QJsonObject colors = doc.object().value("colors").toObject();
+    m_palette.clear();
 
-      for(const QString &role: kRoles) {
-      QString hex = colors.value(role).toObject()
-      .value("dark").toObject()
-      .value("color").toString();
-      if(!hex.isEmpty())
-      m_palette.append(hex);
-      }
+    for (const QString &role : kRoles) {
+      QString hex = colors.value(role).toObject().value("dark").toObject().value("color").toString();
+      if (!hex.isEmpty())
+        m_palette.append(hex);
+    }
 
-      emit paletteUpdated();
-      proc->deleteLater();
-      });
+    emit paletteUpdated();
+    proc->deleteLater();
+  });
 }
 
 void Backend::runMatugen(const QString &path) {
